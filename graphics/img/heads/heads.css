@@ -1,162 +1,651 @@
 .head-doc {
-	background: url('heads.png') no-repeat -36px -1px;
+	background: url('./meleehead/Dr Mario/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-mario {
-	background: url('heads.png') no-repeat -177px -1px;
+	background: url('./meleehead/Mario/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-luigi {
-	background: url('heads.png') no-repeat -329px -1px;
+	background: url('./meleehead/Luigi/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-bowser {
-	background: url('heads.png') no-repeat -454px -1px;
+	background: url('./meleehead/Bowser/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-peach {
-	background: url('heads.png') no-repeat -56px -38px;
+	background: url('./meleehead/Peach/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-yoshi {
-	background: url('heads.png') no-repeat -218px -38px;
+	background: url('./meleehead/Yoshi/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-dk {
-	background: url('heads.png') no-repeat -407px -38px;
+	background: url('./meleehead/Donkey Kong/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-cf {
-	background: url('heads.png') no-repeat -1px -74px;
+	background: url('./meleehead/Captain Falcon/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-ganondorf {
-	background: url('heads.png') no-repeat -188px -74px;
+	background: url('./meleehead/Ganondorf/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-falco {
-	background: url('heads.png') no-repeat -354px -74px;
+	background: url('./meleehead/Falco/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-fox {
-	background: url('heads.png') no-repeat -490px -74px;
+	background: url('./meleehead/Fox/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-ness {
-	background: url('heads.png') no-repeat -14px -110px;
+	background: url('./meleehead/Ness/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-ic {
-	background: url('heads.png') no-repeat -142px -109px;
+	background: url('./meleehead/Ice Climbers/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-samus {
-	background: url('heads.png') no-repeat -445px -111px;
+	background: url('./meleehead/Samus/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-zelda {
-	background: url('heads.png') no-repeat -62px -146px;
+	background: url('./meleehead/Zelda/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-sheik {
-	background: url('heads.png') no-repeat -224px -146px;
+	background: url('./meleehead/Sheik/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-link {
-	background: url('heads.png') no-repeat -386px -146px;
+	background: url('./meleehead/Link/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-yl {
-	background: url('heads.png') no-repeat -22px -182px;
+	background: url('./meleehead/Young Link/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-pichu {
-	background: url('heads.png') no-repeat -182px -184px;
+	background: url('./meleehead/Pichu/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-pikachu {
-	background: url('heads.png') no-repeat -310px -182px;
+	background: url('./meleehead/Pikachu/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-jigglypuff {
-	background: url('heads.png') no-repeat -441px -182px;
+	background: url('./meleehead/Jigglypuff/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-mewtwo {
-	background: url('heads.png') no-repeat -25px -217px;
+	background: url('./meleehead/Mewtwo/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-gw {
-	background: url('heads.png') no-repeat -140px -220px;
+	background: url('./meleehead/GW/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-marth {
-	background: url('heads.png') no-repeat -273px -217px;
+	background: url('./meleehead/Marth/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-roy {
-	background: url('heads.png') no-repeat -434px -217px;
+	background: url('./meleehead/Roy/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-kirby {
-	background: url('heads.png') no-repeat -270px -111px;
+	background: url('./meleehead/Kirby/heads.png') no-repeat;) no-repeat;
 	width: 24px;
 	height: 24px;
 }
 
 .head-none {
 	background: url('heads.png') no-repeat 0px 0px;
-	width: 0px;
-	height: 0px;
-	margin: 0px;
+	width: 32px;
+	height: 24px;
+}
+.head-random {
+    background: url('./pmhead/Random/heads.png') no-repeat;
+    width: 24px;
+    height: 32px;
+}
+.head-pmbowser{
+    background: url('./pmhead/Bowser/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmcf{
+    background: url('./pmhead/CF/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmzard{
+    background: url('./pmhead/Charizard/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmddd{
+    background: url('./pmhead/DDD/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmdiddy{
+    background: url('./pmhead/DK2/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmdk{
+    background: url('./pmhead/DK/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmfalco{
+    background: url('./pmhead/Falco/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmfox{
+    background: url('./pmhead/Fox/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmdorf{
+    background: url('./pmhead/Gannondorf/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmic{
+    background: url('./pmhead/IC/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmike{
+    background: url('./pmhead/Ike/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmivy{
+    background: url('./pmhead/Ivysaur/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmjiggly{
+    background: url('./pmhead/Jigglypuff/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmkirby{
+    background: url('./pmhead/Kirby/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmlink{
+    background: url('./pmhead/Link/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmlucario{
+    background: url('./pmhead/Lucario/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmlucas{
+    background: url('./pmhead/Lucas/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmluigi{
+    background: url('./pmhead/Luigi/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmmario{
+    background: url('./pmhead/Mario/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmmarth{
+    background: url('./pmhead/Marth/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmmeta{
+    background: url('./pmhead/MK/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmmewtwo{
+    background: url('./pmhead/MT/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmgw{
+    background: url('./pmhead/GW/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmness{
+    background: url('./pmhead/Ness/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmolimar{
+    background: url('./pmhead/Olimar/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmpeach{
+    background: url('./pmhead/Peach/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmpika{
+    background: url('./pmhead/Pikachu/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmpit{
+    background: url('./pmhead/Pit/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmrob{
+    background: url('./pmhead/ROB/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmroy{
+    background: url('./pmhead/Roy/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmsamus{
+    background: url('./pmhead/Samus/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmsheik{
+    background: url('./pmhead/Sheik/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmsnake{
+    background: url('./pmhead/Snake/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmsonic{
+    background: url('./pmhead/Sonic/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmsquirtle{
+    background: url('./pmhead/Squirtle/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmtoonl{
+    background: url('./pmhead/TL/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmwario{
+    background: url('./pmhead/Wario/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmwolf{
+    background: url('./pmhead/Wolf/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmyoshi{
+    background: url('./pmhead/Yoshi/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmzelda{
+    background: url('./pmhead/Zelda/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-pmzss{
+    background: url('./pmhead/ZSS/heads.png') no-repeat;
+    width: 32px;
+    height: 32px;
+}
+.head-s4bayo{
+    background: url('./wiiuhead/bayonetta/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4bowser{
+    background: url('./wiiuhead/bowser/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4bowserjr{
+    background: url('./wiiuhead/bowserjr/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4cf{
+    background: url('./wiiuhead/cf/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4zard{
+    background: url('./wiiuhead/charizard/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4cloud{
+    background: url('./wiiuhead/cloud/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4corring{
+    background: url('./wiiuhead/corringirl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4dpit{
+    background: url('./wiiuhead/darkpit/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4ddd{
+    background: url('./wiiuhead/ddd/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4diddy{
+    background: url('./wiiuhead/diddy/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4dk{
+    background: url('./wiiuhead/dk/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4drm{
+    background: url('./wiiuhead/drm/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4dhd{
+    background: url('./wiiuhead/duck/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4falco{
+    background: url('./wiiuhead/calco/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4fox{
+    background: url('./wiiuhead/fox/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4gw{
+    background: url('./wiiuhead/game/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4ganon{
+    background: url('./wiiuhead/ganon/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4gninja{
+    background: url('./wiiuhead/greninja/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4ike{
+    background: url('./wiiuhead/ike/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4puff{
+    background: url('./wiiuhead/jigglypuff/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4kirby{
+    background: url('./wiiuhead/kirby/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4link{
+    background: url('./wiiuhead/link/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4mac{
+    background: url('./wiiuhead/lm/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4lucario{
+    background: url('./wiiuhead/lucario/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4lucas{
+    background: url('./wiiuhead/lucas/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4lucina{
+    background: url('./wiiuhead/lucina/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4luigi{
+    background: url('./wiiuhead/luigi/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4mario{
+    background: url('./wiiuhead/mario/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4marth{
+    background: url('./wiiuhead/marth/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4mm{
+    background: url('./wiiuhead/megaman/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4miig{
+    background: url('./wiiuhead/mii/girl.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4mk{
+    background: url('./wiiuhead/mk/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4mt{
+    background: url('./wiiuhead/mt/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4ness{
+    background: url('./wiiuhead/ness/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4olimar{
+    background: url('./wiiuhead/olimar/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4pacman{
+    background: url('./wiiuhead/pacman/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4palu{
+    background: url('./wiiuhead/palutena/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4peach{
+    background: url('./wiiuhead/peach/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4pika{
+    background: url('./wiiuhead/pikachu/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4pit{
+    background: url('./wiiuhead/pit/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4rob{
+    background: url('./wiiuhead/rob/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4robing{
+    background: url('./wiiuhead/robingirl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4rosa{
+    background: url('./wiiuhead/rosa/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4roy{
+    background: url('./wiiuhead/roy/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4ryu{
+    background: url('./wiiuhead/ryu/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4samus{
+    background: url('./wiiuhead/samus/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4sheik{
+    background: url('./wiiuhead/sheik/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4shulk{
+    background: url('./wiiuhead/shulk/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4sonic{
+    background: url('./wiiuhead/sonic/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4tl{
+    background: url('./wiiuhead/tl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4villager{
+    background: url('./wiiuhead/villager/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4wario{
+    background: url('./wiiuhead/wario/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4wftg{
+    background: url('./wiiuhead/wiigirl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4yoshi{
+    background: url('./wiiuhead/yoshi/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4zelda{
+    background: url('./wiiuhead/zelda/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-s4wetdream{
+    background: url('./wiiuhead/zss/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
 }

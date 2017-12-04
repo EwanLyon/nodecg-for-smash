@@ -1,11 +1,16 @@
 # NodeCG for Smash
 
-Bundles for use with [NodeCG](http://nodecg.com/) in Super Smash Bros. Melee streams. **Compatible only with OBS Studio with latest version of the [Browser Source plugin](https://obsproject.com/forum/resources/browser-plugin.115/).** Recommended that you use the dashboard in Chrome because web-components takes a long time to load in other browsers.
+Bundles for use with [NodeCG](http://nodecg.com/) in Super Smash Bros streams. **Compatible only with OBS Studio with latest version of the [Browser Source plugin](https://obsproject.com/forum/resources/browser-plugin.115/).** Recommended that you use the dashboard in Chrome because web-components takes a long time to load in other browsers.
+## Changes from main NodeCG for Smash
+Now has default skin character icons for PM and Smash 4 as well as the original melee icons
 
+## Known issues
+Only works in NodeCG 0.8.0, I am unsure of how to update it to make it work in newer versions of NodeCG
+4 player mode does not load overlay assets but does display Names, Country flag, team colors, and scores.
 ## How to use
 
 1. Install [git](https://git-scm.com/). Make sure to select 'Use Git from the Windows Command Prompt' if you're on Windows.
-2. Install NodeCG as shown in the instructions on the [NodeCG website.](http://nodecg.com/) If it tells you `bower` is not recognized, type in `npm install -g bower`.
+2. Install NodeCG as shown in the instructions on the [NodeCG website.](http://nodecg.com/) be sure to install 0.8.0! If it tells you `bower` is not recognized, type in `npm install -g bower`.
 3. From this point on, all commands should be in the regular command line, not Node.js. Exit Node.js by hitting ctrl-C twice if you're in Node.js.
 4. Install nodecg-cli as shown [here.](https://github.com/nodecg/nodecg-cli)
 5. In the command line in the folder you installed NodeCG, enter `nodecg install mparkms/nodecg-for-smash`

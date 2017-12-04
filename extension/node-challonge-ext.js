@@ -3,7 +3,7 @@ module.exports = function(nodecg) {
 	var key = nodecg.bundleConfig.challongeKey;
 
 	var client = challonge.createClient({
-		apiKey: key
+		apiKey: '1JL6p4OxxS17HxbJ5BDxYEXymbToQvt6FW8lLh8t'
 	});
 
 	var matches = {};
