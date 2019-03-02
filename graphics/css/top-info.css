@@ -9,7 +9,7 @@ body {
 	/*justify-content: center;*/
 	position: relative;
 	/*padding-top: 3px;*/
-	color: #FFF;
+	color: #fff;
 }
 
 .panel {
@@ -30,12 +30,12 @@ body {
 
 #panel1 {
 	margin-right: 50px;
-	left: 165px;
+	left: 103px;
 }
 
 #panel2 {
 	margin-left: 50px;
-	left: 645px;
+	left: 687px;
 }
 
 #message {
