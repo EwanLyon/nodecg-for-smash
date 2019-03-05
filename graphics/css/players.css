@@ -13,13 +13,13 @@
     font-style: normal;
 }*/
 
-/*body {
-	overflow: hidden;
-}*/
+body {
+    margin: 0px;
+}
 
 #container {
 	width: 1295px;
-	height: 1060px;
+	height: 1080px;
 	color: #fff;
 }
 
@@ -70,7 +70,6 @@
 .players-container {
 	/*position: absolute;
 	bottom: 0;*/
-	margin: 0 5px 5px 5px;
 	position: relative;
 }
 
@@ -147,41 +146,57 @@
 
 .head {
     position: absolute;
-    top: 365px;
+    top: 363px;
     left: 0px;
 }
 
 .tag-2 {
 	width: 248;
-	top: 14px;
+	top: 378px;
 	position: fixed;
 	font-size: 38px;
 	text-align: center;
 }
 
 .score {
-	width: 20px;
-	margin: 7px;
+	width: 85px;
 	text-align: center;
     position: absolute;
-    top: 350px;
+    top: 446px;
+    font-family: 'SerpentineDBol';
+    font-size: 52px;
+    color: #fff;
+}
+
+#p2score-2{
+    position: absolute;
+    left: 0px;
 }
 
 #p1score-2{
     position: absolute;
-    left: 190px;
+    left: 163px;
 }
-
-#p2tag-2 {
-    margin-left: -248px;
+.name-2{
+    top: 365px;
+    height: 81;
+    width: 248;
+    position: fixed;
 }
-
 #p2char-2 {
     transform: scaleX(-1);
     left: 0px;
 }
 #p2flag-2 {
     transform: scaleX(-1);
+}
+#outline{
+    background: url(../img/backgrounds/outline.png) no-repeat;
+    width: 1920;
+    height: 1080;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 .twoplayercontainer {
