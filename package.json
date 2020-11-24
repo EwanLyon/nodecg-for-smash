@@ -1,0 +1,77 @@
+{
+  "name": "nodecg-react-base",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Ewan"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^1.6.0",
+    "dashboardPanels": [
+      {
+        "name": "dashboard",
+        "title": "Dashboard",
+        "width": 2,
+        "headerColor": "#2d4e8a",
+        "file": "dashboard.html"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "graphic.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "scripts": {
+    "build": "npm run build:extension && npm run build:dashboard && npm run build:graphics",
+    "build:extension": "trash extension && tsc -b ./src/extensions/tsconfig.json",
+    "build:dashboard": "trash dashboard && parcel build src/dashboards/*.html --out-dir dashboard --public-url ./ --no-content-hash",
+    "build:graphics": "trash graphics && parcel build src/graphics/*.html --out-dir graphics --public-url ./ --no-content-hash",
+    "watch:dashboard": "parcel watch src/dashboards/*.html --out-dir dashboard --public-url ./",
+    "watch:graphics": "parcel watch src/graphics/*.html --out-dir graphics --public-url ./",
+    "restart:extension": "trash extension && tsc -b ./src/extensions/tsconfig.json && node ../..",
+    "schema-types": "trash src/types/schemas && nodecg schema-types -o ./src/types",
+    "start": "node ../..",
+    "lint": "eslint --no-eslintrc -c ./.eslintrc.json ./src/**/*.{ts,tsx}",
+    "lint:fix": "eslint --no-eslintrc -c ./.eslintrc.json ./src/**/*.{ts,tsx} --fix"
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "use-nodecg": "^0.4.1-1"
+  },
+  "devDependencies": {
+    "@gamesdonequick/prettier-config": "^2.2.0",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "eslint": "^7.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.5",
+    "prettier": "^2.0.5",
+    "trash-cli": "^3.0.0",
+    "typescript": "^3.9.5"
+  }
+}
