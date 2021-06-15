@@ -13,5 +13,15 @@ module.exports = (nodecg: any) => {
 
 async function init() {
 	const nodecg = nodecgApiContext.get();
-	nodecg.log.info('Extensions working');
+
+	// Replicants
+	nodecg.Replicant('roundMatch', {persistent: false});
+	nodecg.Replicant('bgInfo', {defaultValue: {image: true, color: '000000', corner: 5}});
+	nodecg.Replicant('bracket', {defaultValue: [], persistent: false});
+	nodecg.Replicant('twoPlayer', {defaultValue: true});
+	nodecg.Replicant('teamNames', {defaultValue: []});
+
+	// require('./check-update-ext');
+	require('./node-challonge-ext');
+	require('./teams');
 }
