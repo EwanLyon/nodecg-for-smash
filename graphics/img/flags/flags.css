@@ -1,0 +1,38 @@
+.flag {
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+	background-position: 0 0;
+    position: absolute;
+    top: 365px;
+}
+
+.flag.flag-cpu {
+	background: url('./cpu.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 716px;
+	}
+.flag.flag-p1 {
+	background: url('./port1.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 716px;
+	}
+.flag.flag-p2 {
+	background: url('./port2.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 716px;
+	}
+.flag.flag-p3 {
+	background: url('./port3.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 716px;
+	}
+.flag.flag-p4 {
+	background: url('./port4.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 716px;
+	}
+.flag.flag-xx {
+	width: 248px;
+	height: 716px;
+	}

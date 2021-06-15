@@ -1,0 +1,741 @@
+.head-doc {
+	background: url('./meleehead/Dr Mario/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-mario {
+	background: url('./meleehead/Mario/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-luigi {
+	background: url('./meleehead/Luigi/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-bowser {
+	background: url('./meleehead/Bowser/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-peach {
+	background: url('./meleehead/Peach/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-yoshi {
+	background: url('./meleehead/Yoshi/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-dk {
+	background: url('./meleehead/Donkey Kong/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-cf {
+	background: url('./meleehead/Captain Falcon/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-ganondorf {
+	background: url('./meleehead/Ganondorf/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-falco {
+	background: url('./meleehead/Falco/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-fox {
+	background: url('./meleehead/Fox/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-ness {
+	background: url('./meleehead/Ness/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-ic {
+	background: url('./meleehead/Ice Climbers/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-samus {
+	background: url('./meleehead/Samus/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-zelda {
+	background: url('./meleehead/Zelda/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-sheik {
+	background: url('./meleehead/Sheik/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-link {
+	background: url('./meleehead/Link/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-yl {
+	background: url('./meleehead/Young Link/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-pichu {
+	background: url('./meleehead/Pichu/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-pikachu {
+	background: url('./meleehead/Pikachu/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-jigglypuff {
+	background: url('./meleehead/Jigglypuff/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-mewtwo {
+	background: url('./meleehead/Mewtwo/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-gw {
+	background: url('./meleehead/GW/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-marth {
+	background: url('./meleehead/Marth/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-roy {
+	background: url('./meleehead/Roy/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-kirby {
+	background: url('./meleehead/Kirby/heads.png') no-repeat;) no-repeat;
+	width: 248px;
+	height: 715px;
+}
+
+.head-none {
+	background: url('heads.png') no-repeat 0px 0px;
+	width: 32px;
+	height: 24px;
+}
+.head-random {
+    background: url('./pmhead/Random/heads.png') no-repeat;
+    width: 24px;
+    height: 32px;
+}
+.head-pmbowser{
+    background: url('./pmhead/Bowser/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmcf{
+    background: url('./pmhead/CF/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmzard{
+    background: url('./pmhead/Charizard/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmddd{
+    background: url('./pmhead/DDD/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmdiddy{
+    background: url('./pmhead/DK2/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmdk{
+    background: url('./pmhead/DK/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmfalco{
+    background: url('./pmhead/Falco/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmfox{
+    background: url('./pmhead/Fox/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmdorf{
+    background: url('./pmhead/Gannondorf/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmic{
+    background: url('./pmhead/IC/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmike{
+    background: url('./pmhead/Ike/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmivy{
+    background: url('./pmhead/Ivysaur/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmjiggly{
+    background: url('./pmhead/Jigglypuff/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmkirby{
+    background: url('./pmhead/Kirby/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmlink{
+    background: url('./pmhead/Link/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmlucario{
+    background: url('./pmhead/Lucario/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmlucas{
+    background: url('./pmhead/Lucas/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmluigi{
+    background: url('./pmhead/Luigi/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmmario{
+    background: url('./pmhead/Mario/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmmarth{
+    background: url('./pmhead/Marth/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmmeta{
+    background: url('./pmhead/MK/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmmewtwo{
+    background: url('./pmhead/MT/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmgw{
+    background: url('./pmhead/GW/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmness{
+    background: url('./pmhead/Ness/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmolimar{
+    background: url('./pmhead/Olimar/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmpeach{
+    background: url('./pmhead/Peach/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmpika{
+    background: url('./pmhead/Pikachu/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmpit{
+    background: url('./pmhead/Pit/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmrob{
+    background: url('./pmhead/ROB/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmroy{
+    background: url('./pmhead/Roy/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmsamus{
+    background: url('./pmhead/Samus/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmsheik{
+    background: url('./pmhead/Sheik/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmsnake{
+    background: url('./pmhead/Snake/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmsonic{
+    background: url('./pmhead/Sonic/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmsquirtle{
+    background: url('./pmhead/Squirtle/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmtoonl{
+    background: url('./pmhead/TL/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmwario{
+    background: url('./pmhead/Wario/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmwolf{
+    background: url('./pmhead/Wolf/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmyoshi{
+    background: url('./pmhead/Yoshi/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmzelda{
+    background: url('./pmhead/Zelda/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-pmzss{
+    background: url('./pmhead/ZSS/heads.png') no-repeat;
+	width: 248px;
+	height: 715px;
+}
+.head-ultbayo{
+    background: url('./ulthead/bayonetta/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultbowser{
+    background: url('./ulthead/bowser/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultbowserjr{
+    background: url('./ulthead/bowserjr/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultcf{
+    background: url('./ulthead/cf/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultzard{
+    background: url('./ulthead/charizard/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultcloud{
+    background: url('./ulthead/cloud/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultcorring{
+    background: url('./ulthead/corringirl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdpit{
+    background: url('./ulthead/darkpit/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultddd{
+    background: url('./ulthead/ddd/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdiddy{
+    background: url('./ulthead/diddy/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdk{
+    background: url('./ulthead/dk/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdrm{
+    background: url('./ulthead/drm/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdhd{
+    background: url('./ulthead/duck/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultfalco{
+    background: url('./ulthead/falco/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultfox{
+    background: url('./ulthead/fox/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultgw{
+    background: url('./ulthead/game/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultganon{
+    background: url('./ulthead/ganon/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultgninja{
+    background: url('./ulthead/greninja/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultike{
+    background: url('./ulthead/ike/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpuff{
+    background: url('./ulthead/jigglypuff/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultkirby{
+    background: url('./ulthead/kirby/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultlink{
+    background: url('./ulthead/link/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmac{
+    background: url('./ulthead/lm/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultlucario{
+    background: url('./ulthead/lucario/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultlucas{
+    background: url('./ulthead/lucas/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultlucina{
+    background: url('./ulthead/lucina/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultluigi{
+    background: url('./ulthead/luigi/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmario{
+    background: url('./ulthead/mario/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmarth{
+    background: url('./ulthead/marth/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmm{
+    background: url('./ulthead/megaman/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmiig{
+    background: url('./ulthead/mii/girl.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmk{
+    background: url('./ulthead/mk/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmt{
+    background: url('./ulthead/mt/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultness{
+    background: url('./ulthead/ness/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultolimar{
+    background: url('./ulthead/olimar/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpacman{
+    background: url('./ulthead/pacman/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpalu{
+    background: url('./ulthead/palutena/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpeach{
+    background: url('./ulthead/peach/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpika{
+    background: url('./ulthead/pikachu/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpit{
+    background: url('./ulthead/pit/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultrob{
+    background: url('./ulthead/rob/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultrobing{
+    background: url('./ulthead/robingirl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultrosa{
+    background: url('./ulthead/rosa/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultroy{
+    background: url('./ulthead/roy/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultryu{
+    background: url('./ulthead/ryu/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultsamus{
+    background: url('./ulthead/samus/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultsheik{
+    background: url('./ulthead/sheik/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultshulk{
+    background: url('./ulthead/shulk/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultsonic{
+    background: url('./ulthead/sonic/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ulttl{
+    background: url('./ulthead/tl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultvillager{
+    background: url('./ulthead/villager/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultwario{
+    background: url('./ulthead/wario/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultwftg{
+    background: url('./ulthead/wiigirl/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultyoshi{
+    background: url('./ulthead/yoshi/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultzelda{
+    background: url('./ulthead/zelda/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultwetdream{
+    background: url('./ulthead/zss/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultchrom{
+    background: url('./ulthead/Chrom/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdaisy{
+    background: url('./ulthead/Daisy/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultdsamus{
+    background: url('./ulthead/DarkSamus/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ulticee{
+    background: url('./ulthead/IceClimbers/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultincineroar{
+    background: url('./ulthead/Incineroar/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultsquid{
+    background: url('./ulthead/Inkling/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmayor{
+    background: url('./ulthead/Isabelle/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultken{
+    background: url('./ulthead/Ken/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultkrool{
+    background: url('./ulthead/KRool/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpichu{
+    background: url('./ulthead/Pichu/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultplant{
+    background: url('./ulthead/plant/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultpoke{
+    background: url('./ulthead/poke/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultrichter{
+    background: url('./ulthead/richter/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultridley{
+    background: url('./ulthead/ridley/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultmullet{
+    background: url('./ulthead/simon/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultsnek{
+    background: url('./ulthead/snake/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultwolf{
+    background: url('./ulthead/wolf/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}
+.head-ultyink{
+    background: url('./ulthead/ylink/original.png') no-repeat;
+    width: 64px;
+    height: 64px;
+}

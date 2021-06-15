@@ -1,0 +1,55 @@
+<html>
+<head>
+	<link href="css/players.css" rel="stylesheet"/>
+	<link href="img/flags/flags.css" rel="stylesheet"/>
+	<link href="img/heads/heads.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"/>
+
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/players.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		WebFontConfig = {
+			google: { families: [ 'Oxygen::latin' ] }
+		};
+		(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})(); 
+	</script>
+	<div id="container">
+		<div id="space"></div>
+		<div id="twoplayers" class="players-container">
+			<div id="player1-2" class="twoplayer">
+				<div class="twoplayercontainer">
+					<div id="p1flag-2" class="flag flag-twoplayer flag-xx"></div>
+					<div id="p1char-2" class="head head-none"></div>
+                    			<div id="p1name-2" class="name-2">
+					<div id="p1tag-2" class="tag-2"></div>
+				    	</div>
+                    			<img id="p1sponsor-2" class="sponsor" height="64"></img>
+					<div id="p1score-2" class="score"></div>
+				</div>
+			</div>
+			<div id="player2-2" class="twoplayer">
+					<div class="twoplayercontainer">
+					<div id="p2flag-2" class="flag flag-twoplayer flag-xx"></div>
+					<div id="p2char-2" class="head head-none"></div>
+                    			<div id="p2name-2" class="name-2">
+					<div id="p2tag-2" class="tag-2"></div>
+                   			</div>
+					<img id="p2sponsor-2" class="sponsor" height="64"></img>
+					<div id="p2score-2" class="score"></div>
+				</div>
+			</div>
+		</div>
+		<div id=outline></div>
+	</div>
+</body>
+</html>
