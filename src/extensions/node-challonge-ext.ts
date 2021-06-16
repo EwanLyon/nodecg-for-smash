@@ -180,11 +180,12 @@ function parseMatches(matches: Record<string, any>[], players: Record<string, an
 
 	console.log(top8players);
 	console.log(top8);
+	return top8;
 }
 
 function findPlayer(players: Record<string, any>, id: string) {
 	for (const player in players) {
-		if (players[player].participant.id === id) {
+		if (players[player].participant.id.toString() === id.toString()) {
 			return players[player].participant.name;
 		}
 	}

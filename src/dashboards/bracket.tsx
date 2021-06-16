@@ -66,6 +66,7 @@ export const Bracket: React.FC = () => {
 					className="flex"
 					onClick={() => {
 						nodecg.sendMessage('ssbmChallongeUpdate', getChallonge(), function (result) {
+							console.log(result);
 							setBracketReplicant(result);
 							nodecg.sendMessage('ssbmBracketUpdate', updateData(bracketReplicant));
 						});

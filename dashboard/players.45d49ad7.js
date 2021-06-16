@@ -88757,48 +88757,31 @@ var Players = function Players() {
   function swapPlayers() {
     var _a, _b;
 
-    if (twoPlayerRep) {
-      var swap1 = playersRef.current[0];
-      var swap2 = playersRef.current[1];
-      var tmp = {
-        // temporarily store the values for player 1
-        tag: swap1.getTag(),
-        score: swap1.getScore(),
-        char: swap1.getCharacter(),
-        flag: swap1.getCountry(),
-        sponsor: swap1.getSponsor()
-      };
-      swap1.setTag(swap2.getTag());
-      swap1.setScore(swap2.getScore());
-      swap1.setCharacter(swap2.getCharacter());
-      swap1.setCountry(swap2.getCountry());
-      swap1.setSponsor(swap2.getSponsor());
-      swap2.setTag(tmp.tag);
-      swap2.setScore(tmp.score);
-      swap2.setCharacter(tmp.char);
-      swap2.setCountry(tmp.flag);
-      swap2.setSponsor(tmp.sponsor);
-    } else {
-      var swap1number = ((_a = swapDropdownsRef.current[0]) === null || _a === void 0 ? void 0 : _a.getSelected()) || 0;
-      var swap2number = ((_b = swapDropdownsRef.current[1]) === null || _b === void 0 ? void 0 : _b.getSelected()) || 0;
-      var swap1 = playersRef.current[swap1number - 1];
-      var swap2 = playersRef.current[swap2number - 1];
-      var tmp = {
-        tag: swap1.getTag(),
-        team: swap1.getTeam(),
-        flag: swap1.getCountry(),
-        sponsor: swap1.getSponsor()
-      };
-      swap1.setTag(swap2.getTag());
-      swap1.setTeam(swap2.getTeam());
-      swap1.setCountry(swap2.getCountry());
-      swap1.setSponsor(swap2.getSponsor());
-      swap2.setTag(tmp.tag);
-      swap2.setTeam(tmp.team);
-      swap2.setCountry(tmp.flag);
-      swap2.setSponsor(tmp.sponsor);
-    }
-
+    var swap1Index = twoPlayerRep ? 0 : ((_a = swapDropdownsRef.current[0]) === null || _a === void 0 ? void 0 : _a.getSelected()) || 0;
+    var swap2Index = twoPlayerRep ? 1 : ((_b = swapDropdownsRef.current[1]) === null || _b === void 0 ? void 0 : _b.getSelected()) || 0;
+    var swap1 = playersRef.current[swap1Index];
+    var swap2 = playersRef.current[swap2Index];
+    var tmp = {
+      // temporarily store the values for player 1
+      tag: swap1.getTag(),
+      score: swap1.getScore(),
+      char: swap1.getCharacter(),
+      flag: swap1.getCountry(),
+      sponsor: swap1.getSponsor(),
+      team: swap1.getTeam()
+    };
+    swap1.setTag(swap2.getTag());
+    swap1.setScore(swap2.getScore());
+    swap1.setCharacter(swap2.getCharacter());
+    swap1.setCountry(swap2.getCountry());
+    swap1.setSponsor(swap2.getSponsor());
+    swap1.setTeam(swap2.getTeam());
+    swap2.setTag(tmp.tag);
+    swap2.setScore(tmp.score);
+    swap2.setCharacter(tmp.char);
+    swap2.setCountry(tmp.flag);
+    swap2.setSponsor(tmp.sponsor);
+    swap2.setTeam(tmp.team);
     return updateData();
   }
 
@@ -88982,42 +88965,9 @@ var TeamsScore = _react.default.forwardRef(function (props, ref) {
   }));
 });
 
-var TeamDropdown = _react.default.forwardRef(function (props, ref) {
-  var _a = (0, _react.useState)('Red'),
-      selected = _a[0],
-      _setSelected = _a[1];
-
-  (0, _react.useImperativeHandle)(ref, function () {
-    return {
-      getSelected: function getSelected() {
-        return selected;
-      },
-      setSelected: function setSelected(newTeam) {
-        _setSelected(newTeam);
-      }
-    };
-  });
-  return _react.default.createElement(_core.Select, {
-    id: "ssbm-p" + props.player + "Team",
-    label: "Player " + props.player + " Team",
-    value: selected,
-    onChange: function onChange(e) {
-      return _setSelected(e.target.value);
-    }
-  }, _react.default.createElement(_core.MenuItem, {
-    value: "Red"
-  }, "Red"), _react.default.createElement(_core.MenuItem, {
-    value: "Green"
-  }, "Green"), _react.default.createElement(_core.MenuItem, {
-    value: "Blue"
-  }, "Blue"));
-});
-
 var PlayerInfoContainer = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n\tpadding-right: 5;\n\tborder: 1px solid rgba(255, 255, 255, 0.23);\n\tborder-radius: 25px;\n\tpadding: 16px;\n\tmargin: 8px 0;\n\tflex-grow: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tgap: 6px;\n"], ["\n\tpadding-right: 5;\n\tborder: 1px solid rgba(255, 255, 255, 0.23);\n\tborder-radius: 25px;\n\tpadding: 16px;\n\tmargin: 8px 0;\n\tflex-grow: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tgap: 6px;\n"])));
 
 var PlayerInfo = _react.default.forwardRef(function (props, ref) {
-  var selectedTeamRef = (0, _react.useRef)(null);
-
   var _a = (0, _react.useState)(0),
       score = _a[0],
       setScoreState = _a[1];
@@ -89032,17 +88982,27 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
 
   var _d = (0, _react.useState)('none'),
       sponsor = _d[0],
-      setSponsorState = _d[1]; // const [character, setCharacterState] = useState('None');
-  // const [country, setCountryState] = useState('None');
+      setSponsorState = _d[1];
 
+  var _e = (0, _react.useState)('Red'),
+      selectedTeam = _e[0],
+      setSelectedTeam = _e[1];
+
+  var _f = (0, _react.useState)('None'),
+      character = _f[0],
+      setCharacterState = _f[1];
+
+  var _g = (0, _react.useState)('None'),
+      country = _g[0],
+      setCountryState = _g[1];
 
   (0, _react.useImperativeHandle)(ref, function () {
     return {
       getCharacter: function getCharacter() {
-        return document.getElementById("ssbm-p" + props.player + "Char").value;
+        return character;
       },
       setCharacter: function setCharacter(newCharacter) {
-        document.getElementById("ssbm-p" + props.player + "Char").value = newCharacter;
+        setCharacterState(newCharacter);
       },
       getTag: function getTag() {
         return tag;
@@ -89057,20 +89017,16 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
         setScoreState(newScore);
       },
       getCountry: function getCountry() {
-        return document.getElementById("ssbm-p" + props.player + "Flag").value;
+        return country;
       },
       setCountry: function setCountry(newCountry) {
-        document.getElementById("ssbm-p" + props.player + "Flag").value = newCountry;
+        setCountryState(newCountry);
       },
       getTeam: function getTeam() {
-        var _a;
-
-        return ((_a = selectedTeamRef.current) === null || _a === void 0 ? void 0 : _a.getSelected()) || '0';
+        return selectedTeam;
       },
       setTeam: function setTeam(newTeam) {
-        var _a;
-
-        (_a = selectedTeamRef.current) === null || _a === void 0 ? void 0 : _a.setSelected(newTeam);
+        setSelectedTeam(newTeam);
       },
       setTeams: function setTeams(newTeams) {
         setTeamsState(newTeams);
@@ -89086,11 +89042,6 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
   return _react.default.createElement(PlayerInfoContainer, {
     id: (props === null || props === void 0 ? void 0 : props.id) || '',
     className: "flex"
-  }, _react.default.createElement("div", {
-    className: "flex-2",
-    style: {
-      paddingRight: 2
-    }
   }, _react.default.createElement(_core.Select, {
     id: "ssbm-p" + props.player + "Sponsor",
     label: "Sponsor",
@@ -89105,24 +89056,14 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
       value: team.name,
       key: team.url + i.toString()
     }, team.name);
-  }))), _react.default.createElement("div", {
-    className: "flex-4",
-    style: {
-      padding: '0 2px'
-    }
-  }, _react.default.createElement(_core.TextField, {
+  })), _react.default.createElement(_core.TextField, {
     id: "ssbm-p" + props.player + "Tag",
     label: "Player " + props.player + " Tag",
     value: tag,
     onChange: function onChange(e) {
       return setTagState(e.target.value);
     }
-  })), _react.default.createElement("div", {
-    className: "flex",
-    style: {
-      paddingLeft: 2
-    }
-  }, _react.default.createElement(_core.TextField, {
+  }), _react.default.createElement(_core.TextField, {
     type: "number",
     className: "player-score",
     id: "ssbm-p" + props.player + "Score",
@@ -89131,10 +89072,20 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
     onChange: function onChange(e) {
       return setScoreState(parseInt(e.target.value, 10));
     }
-  })), _react.default.createElement(TeamDropdown, {
-    ref: selectedTeamRef,
-    player: 1
-  }), _react.default.createElement(_Autocomplete.default, {
+  }), _react.default.createElement(_core.Select, {
+    id: "ssbm-p" + props.player + "Team",
+    label: "Player " + props.player + " Team",
+    value: selectedTeam,
+    onChange: function onChange(e) {
+      return setSelectedTeam(e.target.value);
+    }
+  }, _react.default.createElement(_core.MenuItem, {
+    value: "Red"
+  }, "Red"), _react.default.createElement(_core.MenuItem, {
+    value: "Green"
+  }, "Green"), _react.default.createElement(_core.MenuItem, {
+    value: "Blue"
+  }, "Blue")), _react.default.createElement(_Autocomplete.default, {
     id: "ssbm-p" + props.player + "Char",
     className: "character-select",
     options: Object.keys(_characters.Characters),
@@ -89146,6 +89097,10 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
         label: "Player " + props.player + " Character",
         variant: "outlined"
       }));
+    },
+    value: character,
+    onChange: function onChange(_event, newValue) {
+      setCharacterState(newValue || 'none');
     }
   }), _react.default.createElement(_Autocomplete.default, {
     id: "ssbm-p" + props.player + "Flag",
@@ -89158,6 +89113,10 @@ var PlayerInfo = _react.default.forwardRef(function (props, ref) {
         label: "Player " + props.player + " Port",
         variant: "outlined"
       }));
+    },
+    value: country,
+    onChange: function onChange(_event, newValue) {
+      setCountryState(newValue || 'xx');
     }
   }));
 });
@@ -89181,13 +89140,13 @@ var SwapDropdown = _react.default.forwardRef(function (props, ref) {
       return setSelected(parseInt(e.target.value, 10));
     }
   }, _react.default.createElement(_core.MenuItem, {
-    value: "1"
+    value: "0"
   }, "Player 1"), _react.default.createElement(_core.MenuItem, {
-    value: "2"
+    value: "1"
   }, "Player 2"), _react.default.createElement(_core.MenuItem, {
-    value: "3"
+    value: "2"
   }, "Player 3"), _react.default.createElement(_core.MenuItem, {
-    value: "4"
+    value: "3"
   }, "Player 4"));
 });
 
@@ -89221,7 +89180,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "24464" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8332" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

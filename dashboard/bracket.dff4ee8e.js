@@ -86409,6 +86409,7 @@ var Bracket = function Bracket() {
     className: "flex",
     onClick: function onClick() {
       nodecg.sendMessage('ssbmChallongeUpdate', getChallonge(), function (result) {
+        console.log(result);
         setBracketReplicant(result);
         nodecg.sendMessage('ssbmBracketUpdate', updateData(bracketReplicant));
       });
@@ -86456,7 +86457,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "24464" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8332" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

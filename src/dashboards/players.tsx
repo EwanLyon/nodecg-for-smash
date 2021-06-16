@@ -57,51 +57,34 @@ export const Players: React.FC = () => {
 	}
 
 	function swapPlayers() {
-		if (twoPlayerRep) {
-			const swap1 = playersRef.current[0]!;
-			const swap2 = playersRef.current[1]!;
-			const tmp = {
-				// temporarily store the values for player 1
-				tag: swap1.getTag(),
-				score: swap1.getScore(),
-				char: swap1.getCharacter(),
-				flag: swap1.getCountry(),
-				sponsor: swap1.getSponsor(),
-			};
+		const swap1Index = twoPlayerRep ? 0 : swapDropdownsRef.current[0]?.getSelected() || 0;
+		const swap2Index = twoPlayerRep ? 1 : swapDropdownsRef.current[1]?.getSelected() || 0;
+		const swap1 = playersRef.current[swap1Index]!;
+		const swap2 = playersRef.current[swap2Index]!;
+		
+		const tmp = {
+			// temporarily store the values for player 1
+			tag: swap1.getTag(),
+			score: swap1.getScore(),
+			char: swap1.getCharacter(),
+			flag: swap1.getCountry(),
+			sponsor: swap1.getSponsor(),
+			team: swap1.getTeam(),
+		};
 
-			swap1.setTag(swap2.getTag());
-			swap1.setScore(swap2.getScore());
-			swap1.setCharacter(swap2.getCharacter());
-			swap1.setCountry(swap2.getCountry());
-			swap1.setSponsor(swap2.getSponsor());
+		swap1.setTag(swap2.getTag());
+		swap1.setScore(swap2.getScore());
+		swap1.setCharacter(swap2.getCharacter());
+		swap1.setCountry(swap2.getCountry());
+		swap1.setSponsor(swap2.getSponsor());
+		swap1.setTeam(swap2.getTeam());
 
-			swap2.setTag(tmp.tag);
-			swap2.setScore(tmp.score);
-			swap2.setCharacter(tmp.char);
-			swap2.setCountry(tmp.flag);
-			swap2.setSponsor(tmp.sponsor);
-		} else {
-			const swap1number = swapDropdownsRef.current[0]?.getSelected() || 0;
-			const swap2number = swapDropdownsRef.current[1]?.getSelected() || 0;
-			const swap1 = playersRef.current[swap1number - 1]!;
-			const swap2 = playersRef.current[swap2number - 1]!;
-			const tmp = {
-				tag: swap1.getTag(),
-				team: swap1.getTeam(),
-				flag: swap1.getCountry(),
-				sponsor: swap1.getSponsor(),
-			};
-
-			swap1.setTag(swap2.getTag());
-			swap1.setTeam(swap2.getTeam());
-			swap1.setCountry(swap2.getCountry());
-			swap1.setSponsor(swap2.getSponsor());
-
-			swap2.setTag(tmp.tag);
-			swap2.setTeam(tmp.team);
-			swap2.setCountry(tmp.flag);
-			swap2.setSponsor(tmp.sponsor);
-		}
+		swap2.setTag(tmp.tag);
+		swap2.setScore(tmp.score);
+		swap2.setCharacter(tmp.char);
+		swap2.setCountry(tmp.flag);
+		swap2.setSponsor(tmp.sponsor);
+		swap2.setTeam(tmp.team);
 
 		return updateData();
 	}
@@ -229,40 +212,6 @@ const TeamsScore = React.forwardRef<TeamsScoreFunc, TeamsScoreProps>((props, ref
 	);
 });
 
-interface TeamDropdownProps {
-	player: number;
-}
-
-interface TeamDropdownFunc {
-	getSelected: () => string;
-	setSelected: (team: string) => void;
-}
-
-const TeamDropdown = React.forwardRef<TeamDropdownFunc, TeamDropdownProps>((props, ref) => {
-	const [selected, setSelected] = useState('Red');
-
-	useImperativeHandle(ref, () => ({
-		getSelected: () => {
-			return selected;
-		},
-		setSelected: (newTeam) => {
-			setSelected(newTeam);
-		},
-	}));
-
-	return (
-		<Select
-			id={`ssbm-p${props.player}Team`}
-			label={`Player ${props.player} Team`}
-			value={selected}
-			onChange={(e) => setSelected(e.target.value as string)}>
-			<MenuItem value="Red">Red</MenuItem>
-			<MenuItem value="Green">Green</MenuItem>
-			<MenuItem value="Blue">Blue</MenuItem>
-		</Select>
-	);
-});
-
 const PlayerInfoContainer = styled.div`
 	padding-right: 5;
 	border: 1px solid rgba(255, 255, 255, 0.23);
@@ -297,20 +246,20 @@ interface PlayerInfoFunc {
 }
 
 const PlayerInfo = React.forwardRef<PlayerInfoFunc, PlayerInfoProps>((props, ref) => {
-	const selectedTeamRef = useRef<TeamDropdownFunc>(null);
 	const [score, setScoreState] = useState(0);
 	const [teams, setTeamsState] = useState<any[]>([]);
 	const [tag, setTagState] = useState('');
 	const [sponsor, setSponsorState] = useState('none');
-	// const [character, setCharacterState] = useState('None');
-	// const [country, setCountryState] = useState('None');
+	const [selectedTeam, setSelectedTeam] = useState('Red');
+	const [character, setCharacterState] = useState('None');
+	const [country, setCountryState] = useState('None');
 
 	useImperativeHandle(ref, () => ({
 		getCharacter: () => {
-			return (document.getElementById(`ssbm-p${props.player}Char`) as HTMLSelectElement).value;
+			return character;
 		},
 		setCharacter: (newCharacter) => {
-			(document.getElementById(`ssbm-p${props.player}Char`) as HTMLSelectElement).value = newCharacter;
+			setCharacterState(newCharacter);
 		},
 		getTag: () => {
 			return tag;
@@ -325,16 +274,16 @@ const PlayerInfo = React.forwardRef<PlayerInfoFunc, PlayerInfoProps>((props, ref
 			setScoreState(newScore);
 		},
 		getCountry: () => {
-			return (document.getElementById(`ssbm-p${props.player}Flag`) as HTMLSelectElement).value;
+			return country;
 		},
 		setCountry: (newCountry) => {
-			(document.getElementById(`ssbm-p${props.player}Flag`) as HTMLSelectElement).value = newCountry;
+			setCountryState(newCountry);
 		},
 		getTeam: () => {
-			return selectedTeamRef.current?.getSelected() || '0';
+			return selectedTeam;
 		},
 		setTeam: (newTeam) => {
-			selectedTeamRef.current?.setSelected(newTeam);
+			setSelectedTeam(newTeam);
 		},
 		setTeams: (newTeams) => {
 			setTeamsState(newTeams);
@@ -349,41 +298,43 @@ const PlayerInfo = React.forwardRef<PlayerInfoFunc, PlayerInfoProps>((props, ref
 
 	return (
 		<PlayerInfoContainer id={props?.id || ''} className="flex">
-			<div className="flex-2" style={{ paddingRight: 2 }}>
-				<Select
-					id={`ssbm-p${props.player}Sponsor`}
-					label="Sponsor"
-					value={sponsor}
-					onChange={(e) => setSponsorState(e.target.value as string)}>
-					<MenuItem value="none">None</MenuItem>
-					{teams.map((team, i) => {
-						return (
-							<MenuItem value={team.name} key={team.url + i.toString()}>
-								{team.name}
-							</MenuItem>
-						);
-					})}
-				</Select>
-			</div>
-			<div className="flex-4" style={{ padding: '0 2px' }}>
-				<TextField
-					id={`ssbm-p${props.player}Tag`}
-					label={`Player ${props.player} Tag`}
-					value={tag}
-					onChange={(e) => setTagState(e.target.value as string)}
-				/>
-			</div>
-			<div className="flex" style={{ paddingLeft: 2 }}>
-				<TextField
-					type="number"
-					className="player-score"
-					id={`ssbm-p${props.player}Score`}
-					label="Score"
-					value={score}
-					onChange={(e) => setScoreState(parseInt(e.target.value, 10))}
-				/>
-			</div>
-			<TeamDropdown ref={selectedTeamRef} player={1} />
+			<Select
+				id={`ssbm-p${props.player}Sponsor`}
+				label="Sponsor"
+				value={sponsor}
+				onChange={(e) => setSponsorState(e.target.value as string)}>
+				<MenuItem value="none">None</MenuItem>
+				{teams.map((team, i) => {
+					return (
+						<MenuItem value={team.name} key={team.url + i.toString()}>
+							{team.name}
+						</MenuItem>
+					);
+				})}
+			</Select>
+			<TextField
+				id={`ssbm-p${props.player}Tag`}
+				label={`Player ${props.player} Tag`}
+				value={tag}
+				onChange={(e) => setTagState(e.target.value as string)}
+			/>
+			<TextField
+				type="number"
+				className="player-score"
+				id={`ssbm-p${props.player}Score`}
+				label="Score"
+				value={score}
+				onChange={(e) => setScoreState(parseInt(e.target.value, 10))}
+			/>
+			<Select
+				id={`ssbm-p${props.player}Team`}
+				label={`Player ${props.player} Team`}
+				value={selectedTeam}
+				onChange={(e) => setSelectedTeam(e.target.value as string)}>
+				<MenuItem value="Red">Red</MenuItem>
+				<MenuItem value="Green">Green</MenuItem>
+				<MenuItem value="Blue">Blue</MenuItem>
+			</Select>
 			<Autocomplete
 				id={`ssbm-p${props.player}Char`}
 				className="character-select"
@@ -392,6 +343,10 @@ const PlayerInfo = React.forwardRef<PlayerInfoFunc, PlayerInfoProps>((props, ref
 				renderInput={(params) => (
 					<TextField {...params} label={`Player ${props.player} Character`} variant="outlined" />
 				)}
+				value={character}
+				onChange={(_event, newValue) => {
+					setCharacterState(newValue || 'none');
+				}}
 			/>
 			<Autocomplete
 				id={`ssbm-p${props.player}Flag`}
@@ -400,6 +355,10 @@ const PlayerInfo = React.forwardRef<PlayerInfoFunc, PlayerInfoProps>((props, ref
 				renderInput={(params) => (
 					<TextField {...params} label={`Player ${props.player} Port`} variant="outlined" />
 				)}
+				value={country}
+				onChange={(_event, newValue) => {
+					setCountryState(newValue || 'xx');
+				}}
 			/>
 		</PlayerInfoContainer>
 	);
@@ -428,10 +387,10 @@ const SwapDropdown = React.forwardRef<SwapDropdownFunc, SwapDropdownProps>((prop
 			id={props?.id || ''}
 			value={selected}
 			onChange={(e) => setSelected(parseInt(e.target.value as string, 10))}>
-			<MenuItem value="1">Player 1</MenuItem>
-			<MenuItem value="2">Player 2</MenuItem>
-			<MenuItem value="3">Player 3</MenuItem>
-			<MenuItem value="4">Player 4</MenuItem>
+			<MenuItem value="0">Player 1</MenuItem>
+			<MenuItem value="1">Player 2</MenuItem>
+			<MenuItem value="2">Player 3</MenuItem>
+			<MenuItem value="3">Player 4</MenuItem>
 		</Select>
 	);
 });

@@ -174,10 +174,11 @@ function parseMatches(matches, players) {
     }
     console.log(top8players);
     console.log(top8);
+    return top8;
 }
 function findPlayer(players, id) {
     for (const player in players) {
-        if (players[player].participant.id === id) {
+        if (players[player].participant.id.toString() === id.toString()) {
             return players[player].participant.name;
         }
     }
